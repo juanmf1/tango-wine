@@ -1,24 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+// Componentes
+import PantallaPrincipal from "./components/Pantalla Principal";
+import NavigationBar from "./components/Navbar";
+import Presentacion from "./components/Presentacion";
+import FormularioContacto from "./components/Formulario Contacto";
+
+AOS.init();
 
 function App() {
+  const [isEntered, setIsEntered] = useState(false);
+
+  const handleClickLogo = () => {
+    setIsEntered(true);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {!isEntered && <PantallaPrincipal onClick={handleClickLogo} />}
+
+      {isEntered && (
+        <>
+          <NavigationBar />
+          <Presentacion />
+          <FormularioContacto />
+        </>
+      )}
+    </>
   );
 }
 
