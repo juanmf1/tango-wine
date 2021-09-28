@@ -48,7 +48,8 @@ const FormularioContacto = () => {
   return (
     <Container
       fluid
-      className="container-contacto d-flex flex-column p-5 align-items-center"
+      className="container-contacto d-flex flex-column px-3 py-5 align-items-center"
+      id="contacto"
     >
       <h3 data-aos="fade-down" className="titulo align-self-center mb-3">
         CONTACTANOS
@@ -58,7 +59,7 @@ const FormularioContacto = () => {
       </p>
       <Form
         data-aos="zoom-in"
-        className="form-contacto p-3"
+        className="form-contacto p-2"
         onSubmit={enviarEmail}
       >
         <Form.Group className="mb-3" controlId="nombre">
@@ -97,6 +98,7 @@ const FormularioContacto = () => {
         <Form.Group className="mb-3" controlId="mensaje">
           <Form.Label>Mensaje</Form.Label>
           <Form.Control
+            as="textarea"
             value={mensaje}
             onChange={handleChangeMensaje}
             style={{ height: "200px" }}
@@ -114,6 +116,11 @@ const FormularioContacto = () => {
           Enviar
         </Button>
       </Form>
+      <div className="div-contacto-ig">
+        <p style={{fontSize:"2rem"}} className="align-self-center m-5 h3">
+          Contactanos también a través de nuestro instagram <a href="" className="icono-ig " target="_blank"><i style={{color:"#fff"}} className="icono-ig bi bi-instagram"></i></a>
+        </p>
+      </div>
     </Container>
   );
 };

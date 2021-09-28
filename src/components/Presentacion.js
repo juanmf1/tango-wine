@@ -6,28 +6,28 @@ import img from "../images/tango_wine.png";
 const Presentacion = () => {
   return (
     <>
-      <Container fluid className="container-intro px-5 d-flex">
+      <Container fluid className="container-intro px-5 d-flex flex-column flex-lg-row" id="tango">
         <div className="w-50">
           <h1>Tango Wine</h1>
           <p> Bar de vinos y picadas</p>
         </div>
         <div className="w-50 d-flex flex-column justify-content-around align-items-center">
-          <img data-aos="flip-right" className="img-intro" src={slide2} alt="" />
-          <img data-aos="flip-left" className="img-intro" src={slide3} alt="" />
+          <img data-aos="flip-right" className="img-intro d-none d-lg-block" src={slide2} alt="" />
+          <img data-aos="flip-left" className="img-intro d-none d-lg-block" src={slide3} alt="" />
         </div>
       </Container>
-      <Container fluid className="container-presentacion d-flex flex-column justify-content-around px-xl-5">
+      <Container fluid className="container-presentacion d-flex flex-column justify-content-around px-xl-5" id="somos">
         <h3 data-aos="fade-down" className="titulo align-self-center">
           QUIÉNES SOMOS
         </h3>
-        <div data-aos="fade-right" className="w-50 align-self-start mt-5 mb-5">
+        <div data-aos="fade-right" className=" align-self-start mt-5 mb-5">
           Somos un grupo de 5 amigos amantes del vino, el proyecto surgió luego
           de haber realizado varios cursos de cata de vinos y donde nos
           conectamos con el mundo vinícola. La idea es la de crear un ambiente
           confortable para la cata de vinos traídos de toda argentina
           acompañadas de unas deliciosas picadas.
         </div>
-        <div data-aos="fade-left" className="w-50 align-self-end mb-5">
+        <div  data-aos="fade-right" className=" align-self-end mb-5">
           TANGO WINE, se ubica en el corazón del barrio porteño de Palermo
           Soho.
           <br />
@@ -35,7 +35,7 @@ const Presentacion = () => {
           distenderse y perderse de la rutina por un momento, acompañado de una
           copa de vino y una abundante picada con productos de primera calidad.
         </div>
-        <div data-aos="fade-right" className="w-50 align-self-start mb-5">
+        <div data-aos="fade-right" className=" align-self-start mb-5">
           Además de ser un bar privado de vinos y picadas también se proveen
           conservas, y especias orgánicas. <br />A su vez la idea de ofrecer la
           experiencia de catar vinos acompañados con picada, se ofrecerá la
@@ -44,9 +44,10 @@ const Presentacion = () => {
         </div>
       </Container>
 
-      <Container id="quienes"
+      <Container
         fluid
         className="container-miembros d-flex flex-column py-5 px-3"
+        id="staff"
       >
           <h3 style={{color:"#b58243"}} data-aos="fade-down" className="titulo align-self-center mb-5">
           NUESTRO STAFF

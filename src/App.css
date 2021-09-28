@@ -7,6 +7,13 @@
 /* font-family: 'Lato', sans-serif; */
 /* font-family: 'Koh Santepheap', cursive; */
 
+/* X-Small	None	<576px
+Small	sm	≥576px
+Medium	md	≥768px
+Large	lg	≥992px
+Extra large	xl	≥1200px
+Extra extra large	xxl	≥1400px */
+
 :root {
   --color-fuente: #bbb;
   --color-fuente-alt: rgb(0, 0, 0);
@@ -25,7 +32,7 @@
 
 .titulo{
   font-weight: 800;
-  font-size:5rem;
+  font-size:4.5rem;
   color: var(--color-titulos);
 }
 
@@ -36,6 +43,7 @@
   font-size: 1.5rem;
   color: var(--color-fuente) !important;
   border-radius: 10px;
+  margin-left:.3rem;
 }
 
 .nav-link:hover {
@@ -55,6 +63,7 @@
 .container-main {
   background-image: url("./images/pexels-florent-b-2664149.jpg");
   min-height: 100vh;
+  text-align: center;
 }
 
 .container-main h3{
@@ -117,6 +126,7 @@
 
 .container-presentacion div {
   font-family: "Playfair Display", serif;
+  width:50%;
   font-size: 1.3rem;
   font-style: italic;
   color: var(--color-fuente-alt);
@@ -163,7 +173,7 @@
 .container-contacto{
   background-image: url("./images/thomas-thompson-KEWVZAwkLxQ-unsplash.jpg");
   background-size: cover;
-  color: var(--color-fuente);
+  color: #eee;
   text-align:center;
 }
 
@@ -174,3 +184,57 @@
   text-align:left;
   font-size:1.2rem;
 }
+
+
+.div-contancto-ig{
+  text-align:justify;
+}
+
+.icono-ig{
+  transition: .2s;
+}
+.icono-ig:hover{
+  color: var(--color-titulos-active) !important;
+}
+
+
+/* Estilos ubicacion */
+
+.container-ubicacion{
+  background-image: url("./images/mae-mu-rgEHTLwaI_8-unsplash.jpg");
+  background-size: cover;
+  color: #eee;
+  min-height: 80vh;
+}
+
+/* Estilos footer */
+
+.container-footer{
+  background-color: #000;
+  color: var(--color-fuente-active);
+  text-align:center;
+}
+
+.container-footer p{
+  font-size: 1.6rem;
+}
+
+
+
+@media (max-width: 768px){
+  .form-contacto{
+    width:100%;
+  }
+  .titulo{
+    font-size:3rem;
+  }
+  .container-miembros div {
+    width:100%;
+  }
+  .container-presentacion div {
+    width:100%;
+  }
+}
+
+
+
