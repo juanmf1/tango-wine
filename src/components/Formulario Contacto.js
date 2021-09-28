@@ -118,7 +118,7 @@ const FormularioContacto = () => {
       </Form>
       <div className="div-contacto-ig">
         <p style={{fontSize:"2rem"}} className="align-self-center m-5 h3">
-          Contactanos también a través de nuestro instagram <a href="" className="icono-ig " target="_blank"><i style={{color:"#fff"}} className="icono-ig bi bi-instagram"></i></a>
+          Contactanos también a través de nuestro instagram <a href="www.instagram.com" className="icono-ig " target="_blank"><i style={{color:"#fff"}} className="icono-ig bi bi-instagram"></i></a>
         </p>
       </div>
     </Container>
