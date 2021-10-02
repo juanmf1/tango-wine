@@ -2,6 +2,11 @@ import Container from "react-bootstrap/Container";
 import slide2 from "../images/WhatsApp Image 2021-09-19 at 22.21.45.jpeg";
 import slide3 from "../images/WhatsApp Image 2021-09-19 at 22.21.45 (1).jpeg";
 import img from "../images/tango_wine.png";
+import malenaimg from "../images/malena.jpeg";
+import matiasimg from "../images/matiasdiaz.jpeg";
+import carlaimg from "../images/carli.jpg";
+import luciaimg from "../images/lucia.jpeg";
+import rominaimg from "../images/romina.jpeg";
 
 const Presentacion = () => {
   return (
@@ -52,8 +57,8 @@ const Presentacion = () => {
           <h3 style={{color:"#b58243"}} data-aos="fade-down" className="titulo align-self-center mb-5">
           NUESTRO STAFF
         </h3>
-        <div data-aos="fade-right">
-          <p>
+        <div data-aos="fade-right" className="d-flex flex-column flex-lg-row">
+          <p className="info-miembro">
             ●{" "}
             <span>
               <u>Malena Sbarra:</u>
@@ -68,9 +73,10 @@ const Presentacion = () => {
               perro!
             </div>
           </p>
+          <img data-aos="flip-left" data-aos-easing="ease-in-sine" className="img-miembro" src={malenaimg} alt=""/>
         </div>
-        <div data-aos="fade-right">
-          <p>
+        <div data-aos="fade-right"  className="d-flex flex-column flex-lg-row">
+          <p className="info-miembro">
             ●{" "}
             <span>
               <u>Matías Díaz:</u>
@@ -85,9 +91,10 @@ const Presentacion = () => {
               mis amigos tomando un buen vino
             </div>
           </p>
+            <img data-aos="flip-right" data-aos-easing="ease-in-sine" className="img-miembro" src={matiasimg} alt=""/>
         </div>
-        <div data-aos="fade-right">
-          <p>
+        <div data-aos="fade-right"  className="d-flex flex-column flex-lg-row">
+          <p className="info-miembro">
             ●{" "}
             <span>
               <u>Carla Rempel:</u>
@@ -105,9 +112,10 @@ const Presentacion = () => {
               cada tanto acompañar esos momentos con una buena copa de vino.
             </div>
           </p>
+            <img data-aos="flip-left" data-aos-easing="ease-in-sine" className="img-miembro" src={carlaimg} alt=""/>
         </div>
-        <div data-aos="fade-right">
-          <p>
+        <div data-aos="fade-right"  className="d-flex flex-column flex-lg-row">
+          <p className="info-miembro">
             ●{" "}
             <span>
               <u>Romina Vellido:</u>
@@ -123,9 +131,10 @@ const Presentacion = () => {
               pasando un buen rato con familiares, pareja y amigos.
             </div>
           </p>
+            <img data-aos="flip-right" data-aos-easing="ease-in-sine" className="img-miembro" src={rominaimg} alt=""/>
         </div>
-        <div data-aos="fade-right">
-          <p>
+        <div data-aos="fade-right"  className="d-flex flex-column flex-lg-row">
+          <p className="info-miembro">
             ●{" "}
             <span>
               <u>Lucia Dellavedova:</u>
@@ -144,6 +153,7 @@ const Presentacion = () => {
               gente y pasar un buen momento con amigos y familiares.
             </div>
           </p>
+            <img data-aos="flip-left" data-aos-easing="ease-in-sine" className="img-miembro" src={luciaimg} alt=""/>
         </div>
       </Container>
     </>

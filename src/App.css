@@ -30,9 +30,9 @@ Extra extra large	xxl	≥1400px */
   box-sizing: border-box;
 }
 
-.titulo{
+.titulo {
   font-weight: 800;
-  font-size:4.5rem;
+  font-size: 4.5rem;
   color: var(--color-titulos);
 }
 
@@ -43,7 +43,7 @@ Extra extra large	xxl	≥1400px */
   font-size: 1.5rem;
   color: var(--color-fuente) !important;
   border-radius: 10px;
-  margin-left:.3rem;
+  margin-left: 0.3rem;
 }
 
 .nav-link:hover {
@@ -55,7 +55,7 @@ Extra extra large	xxl	≥1400px */
 }
 
 .navbar-custom {
-  background-color: rgba(0, 0, 0, 0.472);
+  background-color: rgba(0, 0, 0, 0.774);
 }
 
 /* Estilos Pantalla principal  */
@@ -66,47 +66,46 @@ Extra extra large	xxl	≥1400px */
   text-align: center;
 }
 
-.container-main h3{
+.container-main h3 {
   color: var(--color-titulos);
 }
 
 .logo {
-  width:25rem;
+  width: 25rem;
   border-radius: 50%;
 
   background: #fff;
-  transition:0.3s;
+  transition: 0.3s;
 }
 
-.logo:hover{
+.logo:hover {
   transform: scale(1.03);
-  cursor:pointer;
+  cursor: pointer;
   box-shadow: 0 0 15px #ddd;
 }
 
-
 /* Estilos bloque intro */
 
-.container-intro{
-  padding-top:100px;
+.container-intro {
+  padding-top: 100px;
   background-image: url("./images/pexels-bruno-cantuária-774454.jpg");
   background-size: cover;
-  min-height:100vh;
+  min-height: 100vh;
 }
 
-.container-intro div h1{
-  font-size:7rem;
+.container-intro div h1 {
+  font-size: 7rem;
   color: var(--color-titulos);
 }
 
-.container-intro div p{
-  font-size:2rem;
-  color:var(--color-fuente);
-  font-style:italic;
+.container-intro div p {
+  font-size: 2rem;
+  color: var(--color-fuente);
+  font-style: italic;
 }
 
-.img-intro{
-  width:60%;
+.img-intro {
+  width: 60%;
   border: 5px solid var(--color-titulos);
 }
 /* Estilos bloque presentacion */
@@ -121,12 +120,11 @@ Extra extra large	xxl	≥1400px */
 .container-presentacion h3 {
   color: var(--color-titulos);
   font-family: "Playfair Display", serif;
-
 }
 
 .container-presentacion div {
   font-family: "Playfair Display", serif;
-  width:50%;
+  width: 50%;
   font-size: 1.3rem;
   font-style: italic;
   color: var(--color-fuente-alt);
@@ -135,7 +133,7 @@ Extra extra large	xxl	≥1400px */
   box-shadow: 5px 5px 10px #444;
   padding-left: 20px;
   padding-right: 20px;
-  text-align:justify;
+  text-align: justify;
 }
 
 /* Estilos bloque miembros */
@@ -147,20 +145,20 @@ Extra extra large	xxl	≥1400px */
 }
 .container-miembros div {
   font-weight: 600;
-  width: 60%;
   padding: 15px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem;
   text-align: justify;
 }
 .container-miembros div p {
   color: var(--color-fuente);
   font-size: 1.25rem;
+  width: 60%;
 }
 
 .container-miembros div p span {
   color: var(--color-titulos);
   font-weight: bold;
-  font-size:2rem;
+  font-size: 2rem;
 }
 
 .container-miembros div p .quote {
@@ -168,39 +166,46 @@ Extra extra large	xxl	≥1400px */
   font-weight: 400;
 }
 
+.img-miembro {
+  height: 300px;
+  width: 300px;
+  filter: grayscale(1);
+  object-fit: cover;
+  border-radius: 8px;
+  margin: auto;
+}
+
 /* Estilos bloque formulario de contacto */
 
-.container-contacto{
+.container-contacto {
   background-image: url("./images/thomas-thompson-KEWVZAwkLxQ-unsplash.jpg");
   background-size: cover;
   color: #eee;
-  text-align:center;
+  text-align: center;
 }
 
-.form-contacto{
-  width:50%;
+.form-contacto {
+  width: 50%;
   background-color: var(--bg-div);
   border-radius: 3px;
-  text-align:left;
-  font-size:1.2rem;
+  text-align: left;
+  font-size: 1.2rem;
 }
 
-
-.div-contancto-ig{
-  text-align:justify;
+.div-contancto-ig {
+  text-align: justify;
 }
 
-.icono-ig{
-  transition: .2s;
+.icono-ig {
+  transition: 0.2s;
 }
-.icono-ig:hover{
+.icono-ig:hover {
   color: var(--color-titulos-active) !important;
 }
 
-
 /* Estilos ubicacion */
 
-.container-ubicacion{
+.container-ubicacion {
   background-image: url("./images/mae-mu-rgEHTLwaI_8-unsplash.jpg");
   background-size: cover;
   color: #eee;
@@ -209,32 +214,30 @@ Extra extra large	xxl	≥1400px */
 
 /* Estilos footer */
 
-.container-footer{
+.container-footer {
   background-color: #000;
   color: var(--color-fuente-active);
-  text-align:center;
+  text-align: center;
 }
 
-.container-footer p{
+.container-footer p {
   font-size: 1.6rem;
 }
 
-
-
-@media (max-width: 768px){
-  .form-contacto{
-    width:100%;
+@media (max-width: 768px) {
+  .form-contacto {
+    width: 100%;
   }
-  .titulo{
-    font-size:3rem;
-  }
-  .container-miembros div {
-    width:100%;
+  .titulo {
+    font-size: 3rem;
   }
   .container-presentacion div {
-    width:100%;
+    width: 100%;
   }
 }
 
-
-
+@media (max-width: 992px) {
+  .container-miembros div p {
+    width: 100%;
+  }
+}

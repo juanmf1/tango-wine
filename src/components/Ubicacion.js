@@ -5,7 +5,7 @@ import GoogleMaps from "simple-react-google-maps";
 
 const Ubicacion = () => {
   return (
-    <Container fluid className="container-ubicacion d-flex flex-column align-items-center py-5" id="ubicacion">
+    <Container fluid className="container-ubicacion d-flex flex-column align-items-center py-5 px-3" id="ubicacion">
         <h3 data-aos="fade-down" className="titulo align-self-center mb-3">
         UBICACIÓN
       </h3>
