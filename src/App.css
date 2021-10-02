@@ -64,6 +64,7 @@ Extra extra large	xxl	≥1400px */
   background-image: url("./images/pexels-florent-b-2664149.jpg");
   min-height: 100vh;
   text-align: center;
+  background-position: center;
 }
 
 .container-main h3 {
@@ -142,6 +143,7 @@ Extra extra large	xxl	≥1400px */
   background-image: url("./images/biljana-martinic-IGJ_21drT3g-unsplash.jpg");
   background-size: cover;
   text-align: center;
+  background-position: center;
 }
 .container-miembros div {
   font-weight: 600;
