@@ -14,7 +14,7 @@ import Footer from "./components/Footer";
 AOS.init();
 
 function App() {
-  const [isEntered, setIsEntered] = useState(true);
+  const [isEntered, setIsEntered] = useState(false);
 
   const handleClickLogo = () => {
     setIsEntered(true);
