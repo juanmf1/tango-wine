@@ -12,7 +12,7 @@ const Ubicacion = () => {
         Nos encontramos en GUATEMALA 5674, Palermo CABA
       </p>
       <GoogleMaps
-        apiKey={"API KEY HERE}
+        apiKey={"API KEY HERE"}
         style={{ height: "400px", width: "600px", maxWidth: "100%" }}
         zoom={19}
         center={{ lat: -34.57967704467448, lng: -58.432157631218814 }}
